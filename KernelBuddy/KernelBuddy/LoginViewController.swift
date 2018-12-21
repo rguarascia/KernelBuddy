@@ -36,7 +36,9 @@ class LoginViewController : UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     
 }
